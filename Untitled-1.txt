@@ -1,2 +1,0 @@
-senha do banco: IyJ4yYoaNZqCCpuS
-mongodb+srv://admin:<password>@cluster0.atp6t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

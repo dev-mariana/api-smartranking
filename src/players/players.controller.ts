@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Post, Query } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post, Query, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CreatePlayerDto } from './dtos/create-player.dto';
 import { Player } from './interfaces/player.interface';
 import { PlayersService } from './players.service';
@@ -9,6 +9,7 @@ export class PlayersController {
     constructor(private playersService: PlayersService) {}
 
     @Post()
+    @UsePipes(ValidationPipe)
     async createAndUpadatePlayer(@Body() playerDto: CreatePlayerDto): Promise<void> {
         await this.playersService.createAndUpadatePlayer(playerDto);
     }

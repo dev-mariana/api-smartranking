@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, Post, Put, UsePipes, ValidationPipe } fro
 import { CategoriesService } from './categories.service';
 import { CreateCategoryDto } from './dtos/create-category.dto';
 import { UpdateCategoryDto } from './dtos/update-category.dto';
-import { Category } from './interfaces/category';
+import { Category } from './interfaces/category.interface';
 
 @Controller('api/v1/categories')
 export class CategoriesController {

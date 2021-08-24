@@ -1,5 +1,5 @@
 import { ArrayMinSize, IsArray, IsEmail, IsNotEmpty, IsString } from "class-validator";
-import { Event } from "../interfaces/category";
+import { Event } from "../interfaces/category.interface";
 
 export class CreateCategoryDto {
 
